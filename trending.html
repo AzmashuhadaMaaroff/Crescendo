@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="crescendo.css"/>
+		<title>CRESCENDO</title>
+			
+	</head>
+
+<body>
+	<div id="main layout" align="center">
+	<div id="container">
+	
+	<div id="header" style="width:cover; height:180px">
+		<img src="banner.png" style="width:600px; height:300px;"/>
+	
+	<div id="menu" style="float:center;width:1000px; height:600px">
+		<ul class="drop_menu" align="center";>
+			<li><a href='index.html'>Home</a></li>
+			<li><a href='music1.html'>Music</a></li>
+			<li><a href='video.html'>Video</a></li>
+			<li><a href='lyrics.html'>Lyrics</a></li>
+			<li class="active"><a href='trending.html'>Trending</a></li>
+			<li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<form class="cari" action="action_page.php">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button></li>
+			</form>
+		</ul>
+	</div>
+	</div><br><br><br><br><br><b><br><br><br><br>
+	
+	
+<div id="container" style="float:center;width:cover; height:600px" >		
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="trenft.jpg" style="width:100%; height:400px;">
+</div>
+
+<div class="mySlides fade">
+  <img src="trenin.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trenab.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trend.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trencd.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trene.png" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trenlh.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trenx.jpg" style="width:100%; height:400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="trenjc.jpg" style="width:100%; height:400px">
+</div>
+
+</div>
+<br><br><b><br><br><b>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  
+</div>
+</div>	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	</div>
+	<div id="lyrics" align="center" width="cover" height="100px" style="float:center;margin-top:0px;">
+	<table style="float:center;">
+	<tr>
+	<hr align="left" width="100%">
+	<th>Malay Songs</th>
+					<tr>
+						<td><br><br><img src="trenft.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trenin.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trenab.jpg" width="300" height="200"></td>
+						</tr>
+						<tr>
+						<td><h5>Faizal Tahir-Ragaman</h5><br><audio src="Ragaman - Faizal Tahir.mp3" controls></audio></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><h5>Insomniacks-<br>Pulang<h5><br><audio src="Insomniacks - Pulang.mp3" controls></audio></td>	
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><h5>Andi Bernadee-Satu Peluang</h5><br><audio src="Andi Bernadee - Satu Peluang.mp3" controls>
+						
+                    </audio></td></tr>
+					</table>
+					<hr align="left" width="100%">
+					<table>
+					<tr>					
+	<th><br>English Songs</th>
+					<tr>
+						<td><br><br><img src="trend.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trencd.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trene.png" width="300" height="200"></td>
+						</tr>
+						<tr>
+						<td><h5>Drake-God's Plan</h5><br><audio src="Drake - God's Plan.mp3" controls></audio></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><h5>George Ezra-Shotgun<h5><br><audio src="George Ezra - Shotgun.mp3" controls></audio></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h5>Calvin Harris & Dua Lipa-One Kiss</h5><br><audio src="Calvin Harris, Dua Lipa - One Kiss.mp3" controls>						
+                    </audio></td></tr>
+					</table>
+					<hr align="left" width="100%">
+					<table>
+					<tr>					
+	<th><br>Chinese Songs</th>
+					<tr>
+						<td><br><br><img src="trenlh.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trenx.jpg" width="300" height="200"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><br><br><img src="trenjc.jpg" width="300" height="200"></td>
+						</tr>
+						<tr>
+						<td><h5>LuHan-Say It</h5><br><audio src="LuHan_Say it.mp3" controls></audio></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>						
+						<td><h5>Xiao Bing Chih-Love Hurts</h5><br><audio src="Xiao Bing Chih- Love Hurts.mp3" controls></audio></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>						
+						<td><h5><p>Jay Chou-If You Don't <br>Love Me, It's Fine</p><h5><br><audio src="Jay Chou If You Don't Love Me, It's Fine.mp3" controls>	
+                    </audio></td></tr>
+				
+				</table>
+	</div>
+	<br><br><br>
+	<div id="footer"><br>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a><br><br>
+		Copyright&copy;Crescendo_2018
+	</div>
+	</div>
+
+
+</body>
+</html>
+
